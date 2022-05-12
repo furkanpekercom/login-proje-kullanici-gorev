@@ -1,6 +1,7 @@
 import React from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {logout, selectUser} from "../features/userSlice";
+import Navbar from "./Navbar/Navbar"
 
 import "./Logout.css";
 
@@ -17,8 +18,12 @@ const Logout = () => {
 
   return (
     <div className="logout">
+      <Navbar/>
       <h1>
-        Hoşgeldiniz. <span className="user_name">{user.name}</span>
+        Merhaba. <span className="user_name">{user.name}</span>
+      </h1>
+      <h1>
+        Mail Adresiniz. <span className="user_name">{user.email}</span>
       </h1>
       <button className="logout_btn" onClick={(e) => handleLogout(e)}>
         Çıkış Yap

@@ -11,9 +11,7 @@ const Personel = () => {
   return (
     <div className="personel">
       <Navbar/>
-      <h1>
-        Hoşgeldiniz. <span className="user_name">{user.name}</span>
-      </h1>
+      Personel Sayfasıdır.
     </div>
   );
 

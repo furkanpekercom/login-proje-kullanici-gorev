@@ -16,3 +16,36 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     letter-spacing: -2px;
 }
+
+.menu-ul{
+    list-style-type: none;
+    display: flex;
+
+}
+.menu-li-ilk{
+    margin-right: 30px;
+    padding: 10px 15px;
+    background-color: #fff;
+    border-radius: 4px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 2px;
+}
+.menu-li-iki{
+    background-color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 2px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+}
+
+.menu-li-ilk .nav-links{
+    text-decoration: none;
+    color: #000000;
+}
+
+.menu-li-iki .nav-links{
+    text-decoration: none;
+    color: #fff;
+}
+
