@@ -11,7 +11,12 @@
     padding: 2rem 0;
     display: block;
     text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     
+}
+
+.logout-sayfa > h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .logout_btn{
