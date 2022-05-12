@@ -4,19 +4,13 @@
     padding: 0.5rem 1rem;
     display: flex;
     align-items: center;
-    
+    justify-content: center;
+    height: 100px;
 }
 
 .colon-sol{
-    display: flex;
-    justify-content: flex-start;
-
+    margin-right: 2em;
 }
-.colon-sag{
-    display: flex;
-    justify-content: flex-end;
-}
-
 
 .colon-sol > h2 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
