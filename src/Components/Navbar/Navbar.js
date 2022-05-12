@@ -14,22 +14,16 @@ const Navbar = () => {
 
   return (
     <navbar className="navbar">
-      <div className="colon">
+      <div className="colon-sol">
         <h2>DenemeLogo</h2>
       </div>
 
-      <div className="colon">
-        <ul className="colon-links">
-          <li>Anasayfa</li>
-          <li>Personel</li>
-          <li>Süreç</li>
-          <li>Yönetim</li>
-          <li><button className="logout_btn" onClick={(e) => handleLogout(e)}>
+      <div className="colon-sag">
+      <button className="logout_btn" onClick={(e) => handleLogout(e)}>
           Çıkış Yap
-        </button></li>
-        </ul>
+        </button>
       </div>
-
+      
      
     </navbar>
   );
