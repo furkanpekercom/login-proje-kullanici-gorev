@@ -1,20 +1,30 @@
-import React from "react";
+import React, {Component} from "react";
 import "./Personel.css";
-import {useDispatch, useSelector} from "react-redux";
-import {logout, selectUser} from "../features/userSlice";
-import Navbar from "./Navbar/Navbar"
+import Navbar from "./Navbar/Navbar";
+import {personelData} from "../personelData";
+import PersonelList from "./PersonelList"
 
-const Personel = () => {
-    const user = useSelector(selectUser);
+export default class Personel extends Component {
+  state = {
+    personels: personelData,
+  };
 
-  
-  return (
-    <div className="personel">
-      <Navbar/>
-      Personel Sayfasıdır.
-    </div>
-  );
+  render() {
+    const {personels} = this.state;
 
-};
+    return (
+      <div className="personel">
+        <Navbar />
+        <div className="personel-sayfa">
 
-export default Personel;
+          {
+            personels.map((personel) => (
+                <PersonelList key={personel.id} personel={personel} />
+            ))
+          }
+
+        </div>
+      </div>
+    );
+  }
+}

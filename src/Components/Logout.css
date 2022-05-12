@@ -1,5 +1,17 @@
 .logout{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+
+}
+
+.logout-sayfa{
+    width: 70vw;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 2rem 0;
+    display: block;
+    text-align: center;
+    
 }
 
 .logout_btn{
