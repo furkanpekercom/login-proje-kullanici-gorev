@@ -1,29 +1,24 @@
 .navbar{
     background-color: #cecece;
+    width: 100%;
     padding: 0.5rem 1rem;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    
 }
 
-.colon-links{
-    list-style-type: none;
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    text-align: center;
-    margin-top: 6px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: 600;
+.colon-sol{
+    display: flex;
+    justify-content: flex-start;
 
 }
-.colon-links >li:hover{
-    transition: 0.2s;
-    color: red;
-    cursor: pointer;
+.colon-sag{
+    display: flex;
+    justify-content: flex-end;
 }
 
 
-.colon > h2 {
+.colon-sol > h2 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     letter-spacing: -2px;
 }
