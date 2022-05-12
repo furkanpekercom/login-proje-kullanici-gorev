@@ -19,7 +19,7 @@ export default class Personel extends Component {
 
           {
             personels.map((personel) => (
-                <PersonelList key={personel.id} personel={personel} />
+                <PersonelList key={personel.onem} personel={personel} />
             ))
           }
 
