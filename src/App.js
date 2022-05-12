@@ -13,7 +13,7 @@ const App = () => {
 
   return (
     <div>
-        {user ? <Logout/> : <Login/>}
+        {user ? <Logout/> : <Login />}
     </div>
   )
 }

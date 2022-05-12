@@ -50,3 +50,8 @@
     border-radius: 4px;
 }
 
+.submit_btn:hover {
+ background: rgb(56, 119, 255);
+ transition: 0.2s;
+ cursor: pointer;
+}

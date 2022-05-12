@@ -14,10 +14,16 @@
     background: #000000;
     border: none;
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border-radius: 4px;
 }
+.logout_btn:hover{
+    background: rgb(56, 119, 255);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
 
 .user_name{
     color:rgb(56, 119, 255);
