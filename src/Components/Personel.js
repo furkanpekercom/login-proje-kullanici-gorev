@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import "./Personel.css";
 import Navbar from "./Navbar/Navbar";
 import {personelData} from "../personelData";
-import PersonelList from "./PersonelList"
+import PersonelList from "./PersonelList";
 
 export default class Personel extends Component {
   state = {
@@ -15,14 +15,10 @@ export default class Personel extends Component {
     return (
       <div className="personel">
         <Navbar />
-        <div className="personel-sayfa">
-
-          {
-            personels.map((personel) => (
-                <PersonelList key={personel.onem} personel={personel} />
-            ))
-          }
-
+        <div className="personel-sayfa-iki">
+          {personels.map((personel) => (
+            <PersonelList key={personel.onem} personel={personel} />
+          ))}
         </div>
       </div>
     );

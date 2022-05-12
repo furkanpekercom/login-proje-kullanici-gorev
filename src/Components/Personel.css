@@ -11,17 +11,27 @@
     grid-column-gap: 0rem;
 }
 
+.personel-sayfa-iki{
+    width: 70vw;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
 
 .personel-list{
     margin-bottom: 20px;
 }
 
-.tour{
+.furkan{
     margin-bottom: 2rem;
     
 }
 
-.tour img{
+.furkan-info h5 span{
+    margin-right: 10px;
+}
+
+.furkan img{
         width: 100%;
         display: block;
         min-height: 20rem;
@@ -29,7 +39,7 @@
     
 }
 @media screen and (min-width:768px) {
-    .tour{
+    .furkan{
         display: grid;
         
         grid-template-columns: 1fr 3fr;
@@ -57,7 +67,7 @@
     opacity: 1;
 }
 
-.tour-info{
+.furkan-info{
     padding: 1rem 1rem;
     background-color: gray;
    

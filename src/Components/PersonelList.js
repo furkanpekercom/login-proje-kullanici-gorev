@@ -15,14 +15,14 @@ export default class PersonelList extends Component {
     const {id, onem, personel, konum, gorev, img} = this.props.personel;
 
     return (
-      <article className="tour">
+      <article className="furkan">
         <div className="img-container">
           <img src={img} />
           <span className="close-btn">
             <i className="fa-solid fa-square-xmark" />
           </span>
         </div>
-        <div className="tour-info">
+        <div className="furkan-info">
           <h3>{personel}</h3>
 
           <h5>
