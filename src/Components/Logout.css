@@ -8,9 +8,9 @@
 }
 
 .logout_btn{
-    min-width: 280px;
-    padding: 17px 30px;
-    margin-top: 20px;
+    
+    padding: 5px 10px;
+   margin-top: -9px;
     background: #000000;
     border: none;
     color: #fff;
