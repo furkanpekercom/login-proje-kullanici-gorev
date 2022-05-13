@@ -9,6 +9,18 @@ export default class Personel extends Component {
     personels: personelData,
   };
 
+
+  remouvePersonel = (id) => {
+    const {personels} = this.state;
+    const sortedPersonels = personels.filter((personel) => personel.id !== id);
+    this.setState({
+      personels: sortedPersonels,
+    });
+  };
+
+
+
+
   render() {
     const {personels} = this.state;
 
@@ -17,7 +29,7 @@ export default class Personel extends Component {
         <Navbar />
         <div className="personel-sayfa-iki">
           {personels.map((personel) => (
-            <PersonelList key={personel.id} personel={personel} />
+            <PersonelList key={personel.id} personel={personel} removePersonel={this.remouvePersonel}/>
           ))}
         </div>
       </div>

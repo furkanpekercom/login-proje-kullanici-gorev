@@ -13,6 +13,7 @@ export default class PersonelList extends Component {
   };
   render() {
     const {id, onem, personel, konum, gorev, img, verilenGorev} = this.props.personel;
+    const {removePersonel} = this.props;
 
     return (
       <div className="ui cards">
@@ -30,7 +31,7 @@ export default class PersonelList extends Component {
           <div className="extra content">
             <div className="ui two buttons">
               <div className="ui basic green button" onClick={this.handleInfo}>Görevler</div>
-              <div className="ui basic red button">PersonelSil</div>
+              <div className="ui basic red button" onClick={() => removePersonel(id)}>Personel Sil</div>
             </div>
           </div>
         </div>

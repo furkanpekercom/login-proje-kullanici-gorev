@@ -7,7 +7,7 @@ export const personelData = [
       konum: "Yonetici",
       verilenGorev:"Şirketi Yönet.",
       gorev:
-        "Personel yonetimini en güzel şekilde sağlamak, şirket gidişatını takip ederek gerekli adımları atmak."
+        "Personel yonetimini en güzel şekilde sağlamak, şirket gidişatını takip ederek gerekli adımları atmak. Gerekli adımları atarken her zaman büyüme yönünde değil stabilde kalmayıda planlayan kişi."
     },
     {
       id: 2,
@@ -43,9 +43,9 @@ export const personelData = [
       id: 5,
       onem: 30,
       img: "./img/hakan-yildirim.png",
-      personel: "Hakan Yıldırım",
+      personel: "Yagmur Baş",
       konum: "Sos-Med Uzman",
-      verilenGorev:"Kurumsal Tercüme Satışı Yap.",
+      verilenGorev:"Sosyal Medya Yönetimi ++",
       gorev:
         "Sosyal medya uzmanı olarak müşteirler ile iletişşime geçerek bu işlkeri en iyi şekilde yürüten personel."
     },
@@ -67,7 +67,7 @@ export const personelData = [
       konum: "Organize",
       verilenGorev:"Helal lan sana senin görevin yok.",
       gorev:
-        "Belge teslimi gerçekleştiren müşteri ile direk irtibata geçen personeldir."
+        "Belge teslimi gerçekleştiren müşteri ile direk irtibata geçen, teslim sırasındaki sorunları bildiren personel."
     }
   ];
   
