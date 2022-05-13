@@ -23,7 +23,8 @@ export default class PersonelList extends Component {
             <div className="meta">{konum}</div>
             <div className="description">
               {gorev}
-              {this.state.showInfo && <h3>{verilenGorev}</h3>}
+              <hr/>
+              {this.state.showInfo && <div className="show-div"><h3>{verilenGorev}</h3><button >Görev Düzenle</button></div>}
             </div>
           </div>
           <div className="extra content">
