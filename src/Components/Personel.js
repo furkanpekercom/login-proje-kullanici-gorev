@@ -17,7 +17,7 @@ export default class Personel extends Component {
         <Navbar />
         <div className="personel-sayfa-iki">
           {personels.map((personel) => (
-            <PersonelList key={personel.onem} personel={personel} />
+            <PersonelList key={personel.id} personel={personel} />
           ))}
         </div>
       </div>

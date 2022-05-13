@@ -1,74 +1,15 @@
 
-.personel-sayfa{
-    width: 70vw;
-    max-width: 1170px;
-    margin: 0 auto;
-    padding: 2rem 0;
-    
-    display: grid;
-    column-count: 3;
-    grid-template-columns: 2fr 2fr;
-    grid-column-gap: 0rem;
-}
-
 .personel-sayfa-iki{
-    width: 70vw;
+    width: 80vw;
     max-width: 1170px;
     margin: 0 auto;
     padding: 2rem 0;
+    display:grid;
+    grid-template-columns: auto auto auto auto; 
+    column-gap: 20px;
+
 }
 
-.personel-list{
-    margin-bottom: 20px;
-}
-
-.furkan{
-    margin-bottom: 2rem;
-    
-}
-
-.furkan-info h5 span{
-    margin-right: 10px;
-}
-
-.furkan img{
-        width: 100%;
-        display: block;
-        min-height: 20rem;
-
-    
-}
-@media screen and (min-width:768px) {
-    .furkan{
-        display: grid;
-        
-        grid-template-columns: 1fr 3fr;
-        grid-column-gap: 0rem;
-    }
-}
-
-.img-container{
-    position: relative;
-}
-
-.close-btn{
-    position: absolute;
-    display: block;
-    top:5%;
-    right: 5%;
-    color:gray;
-    font-size: 2rem;
-    cursor:pointer;
-   
-    opacity: 0;
-}
-
-.img-container:hover .close-btn{
-    opacity: 1;
-}
-
-.furkan-info{
-    padding: 1rem 1rem;
-    background-color: gray;
-   
+.description > h3 {
+    margin-top: 15px;
 }

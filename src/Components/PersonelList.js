@@ -12,28 +12,28 @@ export default class PersonelList extends Component {
     });
   };
   render() {
-    const {id, onem, personel, konum, gorev, img} = this.props.personel;
+    const {id, onem, personel, konum, gorev, img, verilenGorev} = this.props.personel;
 
     return (
-      <article className="furkan">
-        <div className="img-container">
-          <img src={img} />
-          <span className="close-btn">
-            <i className="fa-solid fa-square-xmark" />
-          </span>
+      <div className="ui cards">
+        <div className="card">
+          <div className="content">
+            
+            <div className="header">{personel}</div>
+            <div className="meta">{konum}</div>
+            <div className="description">
+              {gorev}
+              {this.state.showInfo && <h3>{verilenGorev}</h3>}
+            </div>
+          </div>
+          <div className="extra content">
+            <div className="ui two buttons">
+              <div className="ui basic green button" onClick={this.handleInfo}>Görevler</div>
+              <div className="ui basic red button">PersonelSil</div>
+            </div>
+          </div>
         </div>
-        <div className="furkan-info">
-          <h3>{personel}</h3>
-
-          <h5>
-            Gorevler
-            <span onClick={this.handleInfo}>
-              <i className="fas fa-caret-square-down" />
-            </span>
-          </h5>
-          {this.state.showInfo && <p>{gorev}</p>}
-        </div>
-      </article>
+      </div>
     );
   }
 }
