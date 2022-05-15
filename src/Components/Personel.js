@@ -27,6 +27,7 @@ export default class Personel extends Component {
     return (
       <div className="personel">
         <Navbar />
+        
         <div className="personel-sayfa-iki">
           {personels.map((personel) => (
             <PersonelList key={personel.id} personel={personel} removePersonel={this.remouvePersonel}/>

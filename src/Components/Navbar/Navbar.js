@@ -25,6 +25,11 @@ const Navbar = () => {
               Personel
             </Link>
           </li>
+          <li className="menu-li-ilk">
+            <Link to="/furkan" className="nav-links">
+              Furkan
+            </Link>
+          </li>
           <li className="menu-li-iki">
             <Link to="/profil" className="nav-links">
               Profil

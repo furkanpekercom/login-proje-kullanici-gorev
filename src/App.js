@@ -3,6 +3,7 @@ import {useSelector} from "react-redux";
 import Login from "../src/Components/Login";
 import Logout from "../src/Components/Logout";
 import Personel from "../src/Components/Personel";
+import Furkan from "../src/Furkan";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import "./App.css";
 import {selectUser} from "./features/userSlice";
@@ -17,6 +18,7 @@ const App = () => {
           <Switch>
             <Route path="/" exact component={Personel} />
             <Route path="/profil" component={Logout} />
+            <Route path="/furkan" component={Furkan} />
           </Switch>
         </Router>
       ) : (
