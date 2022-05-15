@@ -1,6 +1,11 @@
 import {useState} from "react";
 import {useSelector, useDispatch} from "react-redux";
-import {addUser, deleteUser, updateUsername} from "../src/features/Users";
+import {
+  addUser,
+  deleteUser,
+  updateUsername,
+  yeniGorevEkle,
+} from "../src/features/Users";
 import "../src/Components/Personel.css";
 import Navbar from "./Components/Navbar/Navbar";
 
@@ -9,10 +14,11 @@ function App() {
 
   const dispatch = useDispatch();
   const [name, setName] = useState("");
-  const [gorev, setGorev] = useState("");
-  const [verilenGorev, setVerilenGorev] = useState("");
   const [username, setUsername] = useState("");
-  const [newUsername, setNewUsername] = useState("");
+  const [gorev, setGorev] = useState("");
+  const [newGorevekle, setGorevEkle] = useState("");
+
+  const [verilenGorev, setVerilenGorev] = useState("");
 
   return (
     <div className="personel">
@@ -32,6 +38,20 @@ function App() {
             setUsername(event.target.value);
           }}
         />
+        <input
+          type="text"
+          placeholder="Departman Tanımı..."
+          onChange={(event) => {
+            setGorev(event.target.value);
+          }}
+        />
+        <input
+          type="text"
+          placeholder="Görev Ekle..."
+          onChange={(event) => {
+            setVerilenGorev(event.target.value);
+          }}
+        />
         <button
           onClick={() => {
             dispatch(
@@ -39,6 +59,8 @@ function App() {
                 id: userList[userList.length - 1].id + 1,
                 name,
                 username,
+                gorev,
+                verilenGorev,
               })
             );
           }}
@@ -61,13 +83,39 @@ function App() {
                     <div className="show-div">
                       <h5>Görev: </h5>
                       <p>{user.verilenGorev}</p>
+                      <input
+                        type="text"
+                        placeholder="Görevi Yenile.."
+                        onChange={(event) => {
+                          setGorevEkle(event.target.value);
+                        }}
+                      />
                     </div>
                   </div>
                 </div>
                 <div className="extra content">
                   <div className="ui two buttons">
-                    <div className="ui basic green button" >Görev Gir</div>
-                    <div className="ui basic red button">Personel Sil</div>
+                    <div
+                      className="ui basic green button"
+                      onClick={() => {
+                        dispatch(
+                          yeniGorevEkle({
+                            id: user.id,
+                            verilenGorev: newGorevekle,
+                          })
+                        );
+                      }}
+                    >
+                      Görev Gir
+                    </div>
+                    <div
+                      className="ui basic red button"
+                      onClick={() => {
+                        dispatch(deleteUser({id: user.id}));
+                      }}
+                    >
+                      Personel Sil
+                    </div>
                   </div>
                 </div>
               </div>
