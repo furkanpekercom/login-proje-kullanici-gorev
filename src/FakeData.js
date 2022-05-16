@@ -24,7 +24,7 @@ export const UsersData = [
         onem: 20,
         name: "Koray Aydın",
         username: "korayaydin",
-        konum: "Onat Vize",
+        konum: "Onat Vize Müs.Tem",
         verilenGorev:"Döviz Cinsinden Satış Yap.",
         gorev:
           "Vize işlemleri hakkında müşteriler ile irtibata geçen kişi ve bu işlemleri en kısa güzel şekilde bitiren eleman."

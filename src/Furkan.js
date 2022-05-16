@@ -26,28 +26,28 @@ function App() {
       <div className="personel-sayfa-iki">
         <input
           type="text"
-          placeholder="İsim..."
+          placeholder="İsim Soyisim"
           onChange={(event) => {
             setName(event.target.value);
           }}
         />
         <input
           type="text"
-          placeholder="Kullanıcı Adi..."
+          placeholder="Kullanıcı Adı"
           onChange={(event) => {
             setUsername(event.target.value);
           }}
         />
         <input
           type="text"
-          placeholder="Departman Tanımı..."
+          placeholder="Departman ve İş Tanımı"
           onChange={(event) => {
             setGorev(event.target.value);
           }}
         />
         <input
           type="text"
-          placeholder="Görev Ekle..."
+          placeholder="Görevi"
           onChange={(event) => {
             setVerilenGorev(event.target.value);
           }}
@@ -76,10 +76,10 @@ function App() {
                 <div className="content">
                   <div className="header">{user.name}</div>
                   <div className="meta">{user.username}</div>
-                  <div className="description">
+                  <div className="meta-peker">{user.konum}</div>
+                  <div className="description-peker">
                     {user.gorev}
                     <hr />
-
                     <div className="show-div">
                       <h5>Görev: </h5>
                       <p>{user.verilenGorev}</p>
@@ -119,6 +119,7 @@ function App() {
                   </div>
                 </div>
               </div>
+              
             </div>
           );
         })}
