@@ -26,7 +26,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="menu-li-ilk">
-            <Link to="/furkan" className="nav-links">
+            <Link to="/gorevler" className="nav-links">
               Görevler
             </Link>
           </li>

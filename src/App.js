@@ -18,7 +18,7 @@ const App = () => {
           <Switch>
             <Route path="/" exact component={Personel} />
             <Route path="/profil" component={Logout} />
-            <Route path="/furkan" component={Furkan} />
+            <Route path="/gorevler" component={Furkan} />
           </Switch>
         </Router>
       ) : (
